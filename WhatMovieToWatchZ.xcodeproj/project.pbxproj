@@ -28,6 +28,7 @@
 		D1D90D8B2918670400FE5ECC /* InfoMovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D872918670400FE5ECC /* InfoMovieData.swift */; };
 		D1D90D8C2918670400FE5ECC /* InfoMovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D882918670400FE5ECC /* InfoMovieManager.swift */; };
 		D1D90D8F2918677200FE5ECC /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D8E2918677200FE5ECC /* InfoViewController.swift */; };
+		D1D90D91291867B000FE5ECC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D90291867B000FE5ECC /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		D1D90D872918670400FE5ECC /* InfoMovieData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoMovieData.swift; sourceTree = "<group>"; };
 		D1D90D882918670400FE5ECC /* InfoMovieManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoMovieManager.swift; sourceTree = "<group>"; };
 		D1D90D8E2918677200FE5ECC /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		D1D90D90291867B000FE5ECC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 		D1D90D8D2918673D00FE5ECC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D1D90D90291867B000FE5ECC /* Extensions.swift */,
 				D1D90D782918654D00FE5ECC /* Constants.swift */,
 				D184888029185EBD00ADDF96 /* Assets.xcassets */,
 			);
@@ -255,6 +258,7 @@
 				D1D90D892918670400FE5ECC /* InfoMovieModel.swift in Sources */,
 				D184887A29185EBD00ADDF96 /* SceneDelegate.swift in Sources */,
 				D1D90D7D2918663600FE5ECC /* CastModel.swift in Sources */,
+				D1D90D91291867B000FE5ECC /* Extensions.swift in Sources */,
 				D1D90D8F2918677200FE5ECC /* InfoViewController.swift in Sources */,
 				D1D90D792918654D00FE5ECC /* Constants.swift in Sources */,
 			);
