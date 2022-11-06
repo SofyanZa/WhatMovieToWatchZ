@@ -23,6 +23,10 @@
 		D1D90D7F2918664700FE5ECC /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D7E2918664700FE5ECC /* MovieModel.swift */; };
 		D1D90D812918667000FE5ECC /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D802918667000FE5ECC /* MovieManager.swift */; };
 		D1D90D83291866B900FE5ECC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D82291866B900FE5ECC /* SearchViewController.swift */; };
+		D1D90D892918670400FE5ECC /* InfoMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D852918670400FE5ECC /* InfoMovieModel.swift */; };
+		D1D90D8A2918670400FE5ECC /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D862918670400FE5ECC /* MovieData.swift */; };
+		D1D90D8B2918670400FE5ECC /* InfoMovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D872918670400FE5ECC /* InfoMovieData.swift */; };
+		D1D90D8C2918670400FE5ECC /* InfoMovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D882918670400FE5ECC /* InfoMovieManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		D1D90D7E2918664700FE5ECC /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		D1D90D802918667000FE5ECC /* MovieManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
 		D1D90D82291866B900FE5ECC /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D1D90D852918670400FE5ECC /* InfoMovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoMovieModel.swift; sourceTree = "<group>"; };
+		D1D90D862918670400FE5ECC /* MovieData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
+		D1D90D872918670400FE5ECC /* InfoMovieData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoMovieData.swift; sourceTree = "<group>"; };
+		D1D90D882918670400FE5ECC /* InfoMovieManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoMovieManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,7 @@
 		D1D90D692918630600FE5ECC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D1D90D842918670400FE5ECC /* Info */,
 				D1D90D7A291865F000FE5ECC /* Movie.swift */,
 				D1D90D7C2918663600FE5ECC /* CastModel.swift */,
 				D1D90D802918667000FE5ECC /* MovieManager.swift */,
@@ -135,6 +144,17 @@
 				D1D90D732918643400FE5ECC /* CollectionViewCell.xib */,
 			);
 			path = InfoCell;
+			sourceTree = "<group>";
+		};
+		D1D90D842918670400FE5ECC /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				D1D90D852918670400FE5ECC /* InfoMovieModel.swift */,
+				D1D90D862918670400FE5ECC /* MovieData.swift */,
+				D1D90D872918670400FE5ECC /* InfoMovieData.swift */,
+				D1D90D882918670400FE5ECC /* InfoMovieManager.swift */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,12 +232,16 @@
 			files = (
 				D1D90D7F2918664700FE5ECC /* MovieModel.swift in Sources */,
 				D1D90D83291866B900FE5ECC /* SearchViewController.swift in Sources */,
+				D1D90D8B2918670400FE5ECC /* InfoMovieData.swift in Sources */,
 				D1D90D7B291865F000FE5ECC /* Movie.swift in Sources */,
 				D1D90D812918667000FE5ECC /* MovieManager.swift in Sources */,
 				D1D90D742918643400FE5ECC /* CollectionViewCell.swift in Sources */,
 				D184887829185EBD00ADDF96 /* AppDelegate.swift in Sources */,
+				D1D90D8A2918670400FE5ECC /* MovieData.swift in Sources */,
 				D1D90D702918642E00FE5ECC /* MainTableViewCell.swift in Sources */,
+				D1D90D8C2918670400FE5ECC /* InfoMovieManager.swift in Sources */,
 				D1D90D772918650600FE5ECC /* TableViewController.swift in Sources */,
+				D1D90D892918670400FE5ECC /* InfoMovieModel.swift in Sources */,
 				D184887A29185EBD00ADDF96 /* SceneDelegate.swift in Sources */,
 				D1D90D7D2918663600FE5ECC /* CastModel.swift in Sources */,
 				D1D90D792918654D00FE5ECC /* Constants.swift in Sources */,
