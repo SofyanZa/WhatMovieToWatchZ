@@ -35,6 +35,8 @@ class TableViewController: UITableViewController {
         let label = UILabel()
         label.textColor = UIColor.white
         label.text = K.appName
+        label.font = UIFont.boldSystemFont(ofSize: 22)
+        
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
         
         tableView.register(MainTableViewCell.nib(), forCellReuseIdentifier: MainTableViewCell.identifier)

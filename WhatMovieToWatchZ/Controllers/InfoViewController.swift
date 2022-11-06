@@ -10,8 +10,6 @@ import UIKit
 /// Le viewcontroller d' information d'un film
 class InfoViewController: UIViewController {
     
-    /// Icone pour visionner une extrait du film
-    @IBOutlet weak var traillerOutlet: UIButton!
     /// Le résumé du film
     @IBOutlet weak var overViewLabel: UILabel!
     /// L'image du film
@@ -54,7 +52,7 @@ class InfoViewController: UIViewController {
         /// Si le mobile est en mode paysage on met la stack view horizontal
         if UIDevice.current.orientation.isLandscape {
             stackView.axis = .horizontal
-            /// Sinon veritcale
+            /// Sinon verticale
         } else {
             stackView.axis = .vertical
         }

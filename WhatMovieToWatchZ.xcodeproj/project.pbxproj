@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D17699692918720A00A0327A /* Cairo-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D17699682918720A00A0327A /* Cairo-VariableFont_wght.ttf */; };
 		D184887829185EBD00ADDF96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184887729185EBD00ADDF96 /* AppDelegate.swift */; };
 		D184887A29185EBD00ADDF96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184887929185EBD00ADDF96 /* SceneDelegate.swift */; };
 		D184887F29185EBD00ADDF96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D184887D29185EBD00ADDF96 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D17699682918720A00A0327A /* Cairo-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		D184887429185EBD00ADDF96 /* WhatMovieToWatchZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatMovieToWatchZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D184887729185EBD00ADDF96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D184887929185EBD00ADDF96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		D1D90D8D2918673D00FE5ECC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D17699682918720A00A0327A /* Cairo-VariableFont_wght.ttf */,
 				D1D90D90291867B000FE5ECC /* Extensions.swift */,
 				D1D90D782918654D00FE5ECC /* Constants.swift */,
 				D184888029185EBD00ADDF96 /* Assets.xcassets */,
@@ -231,6 +234,7 @@
 			files = (
 				D184888429185EBE00ADDF96 /* LaunchScreen.storyboard in Resources */,
 				D184888129185EBE00ADDF96 /* Assets.xcassets in Resources */,
+				D17699692918720A00A0327A /* Cairo-VariableFont_wght.ttf in Resources */,
 				D1D90D6F2918642E00FE5ECC /* MainTableViewCell.xib in Resources */,
 				D184887F29185EBD00ADDF96 /* Main.storyboard in Resources */,
 				D1D90D752918643400FE5ECC /* CollectionViewCell.xib in Resources */,
