@@ -21,6 +21,7 @@
 		D1D90D7B291865F000FE5ECC /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D7A291865F000FE5ECC /* Movie.swift */; };
 		D1D90D7D2918663600FE5ECC /* CastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D7C2918663600FE5ECC /* CastModel.swift */; };
 		D1D90D7F2918664700FE5ECC /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D7E2918664700FE5ECC /* MovieModel.swift */; };
+		D1D90D812918667000FE5ECC /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D802918667000FE5ECC /* MovieManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D1D90D7A291865F000FE5ECC /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D1D90D7C2918663600FE5ECC /* CastModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastModel.swift; sourceTree = "<group>"; };
 		D1D90D7E2918664700FE5ECC /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		D1D90D802918667000FE5ECC /* MovieManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				D1D90D7A291865F000FE5ECC /* Movie.swift */,
 				D1D90D7C2918663600FE5ECC /* CastModel.swift */,
+				D1D90D802918667000FE5ECC /* MovieManager.swift */,
 				D1D90D7E2918664700FE5ECC /* MovieModel.swift */,
 			);
 			path = Models;
@@ -206,6 +209,7 @@
 			files = (
 				D1D90D7F2918664700FE5ECC /* MovieModel.swift in Sources */,
 				D1D90D7B291865F000FE5ECC /* Movie.swift in Sources */,
+				D1D90D812918667000FE5ECC /* MovieManager.swift in Sources */,
 				D1D90D742918643400FE5ECC /* CollectionViewCell.swift in Sources */,
 				D184887829185EBD00ADDF96 /* AppDelegate.swift in Sources */,
 				D1D90D702918642E00FE5ECC /* MainTableViewCell.swift in Sources */,
