@@ -18,6 +18,7 @@
 		D1D90D752918643400FE5ECC /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D90D732918643400FE5ECC /* CollectionViewCell.xib */; };
 		D1D90D772918650600FE5ECC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D762918650600FE5ECC /* TableViewController.swift */; };
 		D1D90D792918654D00FE5ECC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D782918654D00FE5ECC /* Constants.swift */; };
+		D1D90D7B291865F000FE5ECC /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D7A291865F000FE5ECC /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D1D90D732918643400FE5ECC /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		D1D90D762918650600FE5ECC /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D1D90D782918654D00FE5ECC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D1D90D7A291865F000FE5ECC /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		D1D90D692918630600FE5ECC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D1D90D7A291865F000FE5ECC /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D90D7B291865F000FE5ECC /* Movie.swift in Sources */,
 				D1D90D742918643400FE5ECC /* CollectionViewCell.swift in Sources */,
 				D184887829185EBD00ADDF96 /* AppDelegate.swift in Sources */,
 				D1D90D702918642E00FE5ECC /* MainTableViewCell.swift in Sources */,
