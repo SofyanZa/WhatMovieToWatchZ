@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D17699692918720A00A0327A /* Cairo-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D17699682918720A00A0327A /* Cairo-VariableFont_wght.ttf */; };
+		D1769972291883C400A0327A /* WhatMovieToWatchZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1769971291883C400A0327A /* WhatMovieToWatchZTests.swift */; };
+		D1769979291883E600A0327A /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = D1769978291883E600A0327A /* movies.json */; };
+		D176997B291883EA00A0327A /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D176997A291883EA00A0327A /* FakeResponseData.swift */; };
+		D176997D291883ED00A0327A /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = D176997C291883ED00A0327A /* URLSessionFake.swift */; };
 		D184887829185EBD00ADDF96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184887729185EBD00ADDF96 /* AppDelegate.swift */; };
 		D184887A29185EBD00ADDF96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184887929185EBD00ADDF96 /* SceneDelegate.swift */; };
 		D184887F29185EBD00ADDF96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D184887D29185EBD00ADDF96 /* Main.storyboard */; };
@@ -32,8 +36,23 @@
 		D1D90D91291867B000FE5ECC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D90291867B000FE5ECC /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D1769973291883C400A0327A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D184886C29185EBD00ADDF96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D184887329185EBD00ADDF96;
+			remoteInfo = WhatMovieToWatchZ;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		D17699682918720A00A0327A /* Cairo-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		D176996F291883C400A0327A /* WhatMovieToWatchZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatMovieToWatchZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1769971291883C400A0327A /* WhatMovieToWatchZTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatMovieToWatchZTests.swift; sourceTree = "<group>"; };
+		D1769978291883E600A0327A /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
+		D176997A291883EA00A0327A /* FakeResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
+		D176997C291883ED00A0327A /* URLSessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
 		D184887429185EBD00ADDF96 /* WhatMovieToWatchZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatMovieToWatchZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D184887729185EBD00ADDF96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D184887929185EBD00ADDF96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +80,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D176996C291883C400A0327A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D184887129185EBD00ADDF96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,10 +97,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1769970291883C400A0327A /* WhatMovieToWatchZTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1769971291883C400A0327A /* WhatMovieToWatchZTests.swift */,
+				D1769978291883E600A0327A /* movies.json */,
+				D176997A291883EA00A0327A /* FakeResponseData.swift */,
+				D176997C291883ED00A0327A /* URLSessionFake.swift */,
+			);
+			path = WhatMovieToWatchZTests;
+			sourceTree = "<group>";
+		};
 		D184886B29185EBD00ADDF96 = {
 			isa = PBXGroup;
 			children = (
 				D184887629185EBD00ADDF96 /* WhatMovieToWatchZ */,
+				D1769970291883C400A0327A /* WhatMovieToWatchZTests */,
 				D184887529185EBD00ADDF96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				D184887429185EBD00ADDF96 /* WhatMovieToWatchZ.app */,
+				D176996F291883C400A0327A /* WhatMovieToWatchZTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,6 +216,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D176996E291883C400A0327A /* WhatMovieToWatchZTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1769975291883C400A0327A /* Build configuration list for PBXNativeTarget "WhatMovieToWatchZTests" */;
+			buildPhases = (
+				D176996B291883C400A0327A /* Sources */,
+				D176996C291883C400A0327A /* Frameworks */,
+				D176996D291883C400A0327A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1769974291883C400A0327A /* PBXTargetDependency */,
+			);
+			name = WhatMovieToWatchZTests;
+			productName = WhatMovieToWatchZTests;
+			productReference = D176996F291883C400A0327A /* WhatMovieToWatchZTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D184887329185EBD00ADDF96 /* WhatMovieToWatchZ */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D184888829185EBE00ADDF96 /* Build configuration list for PBXNativeTarget "WhatMovieToWatchZ" */;
@@ -204,6 +261,10 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					D176996E291883C400A0327A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = D184887329185EBD00ADDF96;
+					};
 					D184887329185EBD00ADDF96 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -223,11 +284,20 @@
 			projectRoot = "";
 			targets = (
 				D184887329185EBD00ADDF96 /* WhatMovieToWatchZ */,
+				D176996E291883C400A0327A /* WhatMovieToWatchZTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D176996D291883C400A0327A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1769979291883E600A0327A /* movies.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D184887229185EBD00ADDF96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,6 +314,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D176996B291883C400A0327A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1769972291883C400A0327A /* WhatMovieToWatchZTests.swift in Sources */,
+				D176997D291883ED00A0327A /* URLSessionFake.swift in Sources */,
+				D176997B291883EA00A0327A /* FakeResponseData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D184887029185EBD00ADDF96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,6 +350,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D1769974291883C400A0327A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D184887329185EBD00ADDF96 /* WhatMovieToWatchZ */;
+			targetProxy = D1769973291883C400A0327A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		D184887D29185EBD00ADDF96 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -290,6 +378,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D1769976291883C400A0327A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69N585LAQZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sofyan-dev.WhatMovieToWatchZTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatMovieToWatchZ.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WhatMovieToWatchZ";
+			};
+			name = Debug;
+		};
+		D1769977291883C400A0327A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69N585LAQZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sofyan-dev.WhatMovieToWatchZTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatMovieToWatchZ.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WhatMovieToWatchZ";
+			};
+			name = Release;
+		};
 		D184888629185EBE00ADDF96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -463,6 +587,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D1769975291883C400A0327A /* Build configuration list for PBXNativeTarget "WhatMovieToWatchZTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1769976291883C400A0327A /* Debug */,
+				D1769977291883C400A0327A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D184886F29185EBD00ADDF96 /* Build configuration list for PBXProject "WhatMovieToWatchZ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
