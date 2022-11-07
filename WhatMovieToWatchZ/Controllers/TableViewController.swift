@@ -36,11 +36,10 @@ class TableViewController: UITableViewController {
         label.textColor = UIColor.white
         label.text = K.appName
         label.font = UIFont.boldSystemFont(ofSize: 22)
-        
+     
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
         
         tableView.register(MainTableViewCell.nib(), forCellReuseIdentifier: MainTableViewCell.identifier)
-        
         
         popularOutlet.isSelected = true
         
@@ -58,9 +57,6 @@ class TableViewController: UITableViewController {
     
     /// Configuration de la table view
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //        if you need to upload all the images in the future
-        //        let numberOfLines = Double(movieModel.count)/3
-        //        return Int(ceil(numberOfLines))
         
         var numberRows: Int
         
@@ -206,13 +202,14 @@ extension TableViewController {
     func didUpdateMovie(_ movieManager: MovieManager, movie: [MovieModel]) {
         DispatchQueue.main.async {
             
-            for n in movie {
-                self.movieModel.append(n)
+            for index in movie {
+                self.movieModel.append(index)
             }
             
             self.tableView.reloadData()
         }
     }
+    ///
     func didFailWithError(error: Error) {
         
         DispatchQueue.main.async {
@@ -223,6 +220,6 @@ extension TableViewController {
             alert.addAction(action)
             self.present(alert, animated: true, completion: nil)
         }
-        print("aqui\(error)")
+        print("erreur\(error)")
     }
 }

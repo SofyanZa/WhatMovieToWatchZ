@@ -57,7 +57,7 @@ struct InfoMovieManager{
             
             var backDropImage: UIImage?
             let decodedData = try decoder.decode(InfoMovieData.self, from: movieData)
-            if let backDropPath = decodedData.backdrop_path {
+            if let backDropPath = decodedData.backdropPath {
                 backDropImage = self.urlToImage(urlPath: "https://image.tmdb.org/t/p/w780\(backDropPath)")
             }
             let overView = decodedData.overview

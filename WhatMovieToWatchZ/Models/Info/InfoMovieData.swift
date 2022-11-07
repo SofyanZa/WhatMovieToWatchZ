@@ -9,7 +9,7 @@ import Foundation
 
 struct InfoMovieData: Decodable {
     /// chemin de la toile de fond
-    let backdrop_path: String?
+    let backdropPath: String?
     let overview: String?
     let title: String
     let release_date: String
@@ -19,7 +19,7 @@ struct InfoMovieData: Decodable {
     let videos: Videos
 }
 
-struct Credits: Decodable{
+struct Credits: Decodable {
     let cast: [Cast]
 }
 
