@@ -11,12 +11,10 @@ import Metal
 struct MovieData: Decodable {
     let results: [Results]
     let page: Int
-    let total_pages: Int
+    let totalPages: Int
 }
 
 struct Results: Decodable {
-    let poster_path: String?
+    let posterPath: String?
     let id: Int
 }
-
-

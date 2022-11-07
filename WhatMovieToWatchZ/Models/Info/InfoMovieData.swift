@@ -12,8 +12,8 @@ struct InfoMovieData: Decodable {
     let backdropPath: String?
     let overview: String?
     let title: String
-    let release_date: String
-    let vote_average: Double
+    let releaseDate: String
+    let voteAverage: Double
     let tagline: String?
     let credits: Credits
     let videos: Videos
@@ -24,7 +24,7 @@ struct Credits: Decodable {
 }
 
 struct Cast: Decodable {
-    let profile_path: String?
+    let profilePath: String?
     let name: String
 }
 
@@ -38,6 +38,3 @@ struct Video: Decodable {
     let official: Bool
     let key: String
 }
-
-
-

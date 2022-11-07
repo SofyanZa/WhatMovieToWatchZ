@@ -23,11 +23,10 @@ struct Movie: Decodable {
     let voteCount: Int /// Nombre de  votes
     let video: Bool ///  Video en booléen
     let voteAverage: Double /// Moyenne de votes
-    let page : Int?
-    let results : [Results]
+    let page: Int?
+    let results: [Results]
 
-    struct Results : Decodable {
-        let id : Int
-        let genre_ids : [Int]
+    struct Results: Decodable {
+        let id: Int
+        let genreIds: [Int]
     }}
-
