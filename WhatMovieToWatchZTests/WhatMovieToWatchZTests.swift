@@ -7,6 +7,8 @@
 
 import XCTest
 @testable import WhatMovieToWatchZ
+import FirebaseCore
+
 
 final class MovieManagerTest: XCTestCase {
     // test if callback returns an error

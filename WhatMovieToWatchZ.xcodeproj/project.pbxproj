@@ -19,6 +19,7 @@
 		D184887F29185EBD00ADDF96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D184887D29185EBD00ADDF96 /* Main.storyboard */; };
 		D184888129185EBE00ADDF96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D184888029185EBD00ADDF96 /* Assets.xcassets */; };
 		D184888429185EBE00ADDF96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D184888229185EBE00ADDF96 /* LaunchScreen.storyboard */; };
+		D1AEC7AF2918D57D00A161EB /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = D1AEC7AE2918D57D00A161EB /* FirebasePerformance */; };
 		D1D90D6F2918642E00FE5ECC /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D90D6D2918642E00FE5ECC /* MainTableViewCell.xib */; };
 		D1D90D702918642E00FE5ECC /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D6E2918642E00FE5ECC /* MainTableViewCell.swift */; };
 		D1D90D742918643400FE5ECC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D722918643400FE5ECC /* CollectionViewCell.swift */; };
@@ -89,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1AEC7AF2918D57D00A161EB /* FirebasePerformance in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +122,7 @@
 				D184887629185EBD00ADDF96 /* WhatMovieToWatchZ */,
 				D1769970291883C400A0327A /* WhatMovieToWatchZTests */,
 				D184887529185EBD00ADDF96 /* Products */,
+				D1AEC7AD2918D57D00A161EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +149,13 @@
 				D1D90D6B2918632100FE5ECC /* Controllers */,
 			);
 			path = WhatMovieToWatchZ;
+			sourceTree = "<group>";
+		};
+		D1AEC7AD2918D57D00A161EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D1D90D692918630600FE5ECC /* Models */ = {
@@ -238,6 +248,9 @@
 				D1769974291883C400A0327A /* PBXTargetDependency */,
 			);
 			name = WhatMovieToWatchZTests;
+			packageProductDependencies = (
+				D1AEC7AE2918D57D00A161EB /* FirebasePerformance */,
+			);
 			productName = WhatMovieToWatchZTests;
 			productReference = D176996F291883C400A0327A /* WhatMovieToWatchZTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -402,6 +415,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69N585LAQZ;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					HEADER_SEARCH_PATHS,
+					"=",
+					"\"${SRCROOT}/Pods/Firebase/CoreOnly/Sources\"\n",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sofyan-dev.WhatMovieToWatchZTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,6 +438,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69N585LAQZ;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					HEADER_SEARCH_PATHS,
+					"=",
+					"\"${SRCROOT}/Pods/Firebase/CoreOnly/Sources\"\n",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sofyan-dev.WhatMovieToWatchZTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -549,6 +572,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69N585LAQZ;
@@ -557,8 +581,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,6 +601,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69N585LAQZ;
@@ -585,8 +610,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -645,6 +670,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		D17699812918883B00A0327A /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D17699802918883B00A0327A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		D1AEC7AE2918D57D00A161EB /* FirebasePerformance */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D17699802918883B00A0327A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebasePerformance;
