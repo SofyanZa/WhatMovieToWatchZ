@@ -13,4 +13,4 @@ struct MovieModel {
     let id: Int
     let currentPage: Int
     let totalPages: Int
-    }
+}

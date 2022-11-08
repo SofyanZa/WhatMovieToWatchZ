@@ -11,10 +11,10 @@ import Metal
 struct MovieData: Decodable {
     let results: [Results]
     let page: Int
-    let totalPages: Int
+    let total_pages: Int // swiftlint:disable:this identifier_name
 }
 
 struct Results: Decodable {
-    let posterPath: String?
+    let poster_path: String? // swiftlint:disable:this identifier_name
     let id: Int
 }

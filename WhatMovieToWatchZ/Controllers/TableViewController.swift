@@ -10,11 +10,11 @@ import UIKit
 ///  Table ViewController
 class TableViewController: UITableViewController {
 
-    /// Top rated outlet
+    /// Films les mieux classé : outlet
     @IBOutlet weak var topRatedOutlet: UIBarButtonItem!
-    /// Popular outlet
+    /// Films les plus populaires : outlet
     @IBOutlet weak var popularOutlet: UIBarButtonItem!
-    /// Films à venir outlet
+    /// Films à venir : outlet
     @IBOutlet weak var upcomingOutlet: UIBarButtonItem!
 
     /// Instance de Movie Manager
@@ -39,6 +39,8 @@ class TableViewController: UITableViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
 
         tableView.register(MainTableViewCell.nib(), forCellReuseIdentifier: MainTableViewCell.identifier)
+
+        movieManager.delegate = self
 
         popularOutlet.isSelected = true
 
@@ -77,8 +79,10 @@ class TableViewController: UITableViewController {
      }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-        let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.identifier, for: indexPath) as! MainTableViewCell
+        // swiftlint:disable force_cast
+        let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.identifier,
+                                                 for: indexPath) as! MainTableViewCell
+        // swiftlint:enable force_cast
 
         let tapGestureRecognizer1 = UITapGestureRecognizer(target: self, action: #selector(viewImage(_:)))
         cell.image1.addGestureRecognizer(tapGestureRecognizer1)
@@ -107,7 +111,9 @@ class TableViewController: UITableViewController {
     /// Envoi des informations d'un controller à un autre
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MainToInfo" {
+            // swiftlint:disable force_cast
             let destinationVC = segue.destination as! InfoViewController
+            // swiftlint:enable force_cast
             destinationVC.id = movieModel[idTag!].id
         }
     }
@@ -167,30 +173,16 @@ class TableViewController: UITableViewController {
             currentPage = modelPage
             if modelPage < totalPages {
                 nextPage = currentPage + 1
-                movieManager.fetchMovies(page: nextPage, sort: filterMethod) {result in
-                    switch result {
-                    case .success(let movies):
-                        self.didUpdateMovie(self.movieManager, movie: movies)
-                    case .failure(let error):
-                        self.didFailWithError(error: error)
-                    }
-                }
+                movieManager.fetchMovies(page: nextPage, sort: filterMethod)
             }
         } else {
-            movieManager.fetchMovies(page: nextPage, sort: filterMethod) { result in
-                switch result {
-                case .success(let movies):
-                    self.didUpdateMovie(self.movieManager, movie: movies)
-                case .failure(let error):
-                    self.didFailWithError(error: error)
-               }
-            }
-          }
+            movieManager.fetchMovies(page: nextPage, sort: filterMethod)
+        }
        }
     }
 
 // MARK: - MovieManagerDelegate
-extension TableViewController {
+extension TableViewController: MovieManagerDelegate {
     func didUpdateMovie(_ movieManager: MovieManager, movie: [MovieModel]) {
         DispatchQueue.main.async {
             for index in movie {
@@ -211,6 +203,6 @@ extension TableViewController {
             alert.addAction(action)
             self.present(alert, animated: true, completion: nil)
         }
-        print("erreur\(error)")
+        print("erreur : \(error)")
     }
 }

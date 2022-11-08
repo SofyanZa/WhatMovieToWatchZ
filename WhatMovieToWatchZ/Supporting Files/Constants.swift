@@ -7,10 +7,8 @@
 
 import Foundation
 
-/// Structure K regroupant le nom de l'app et la clé api de TMBD
+/// Structure Key regroupant le nom de l'app et la clé api de TMBD
 struct Key {
     static let appName = "What Movie To Watch ?"
     static let apiKey = "747186b06fc6329c3b034129295297fa"
 }
-
-// let baseUrl = "https://api.themoviedb.org/3/"

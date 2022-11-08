@@ -116,8 +116,10 @@ extension InfoViewController: UICollectionViewDataSource, UICollectionViewDelega
 
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        // swiftlint:disable force_cast
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier,
                                                    for: indexPath) as! CollectionViewCell
+        // swiftlint:enable force_cast
         cell.configure(with: castImages[indexPath.row])
         return cell
     }

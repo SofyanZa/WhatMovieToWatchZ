@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D13E45FC291AB2D700CDA161 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E45FB291AB2D700CDA161 /* Tests.swift */; };
 		D17699692918720A00A0327A /* Cairo-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D17699682918720A00A0327A /* Cairo-VariableFont_wght.ttf */; };
 		D1769972291883C400A0327A /* WhatMovieToWatchZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1769971291883C400A0327A /* WhatMovieToWatchZTests.swift */; };
 		D1769979291883E600A0327A /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = D1769978291883E600A0327A /* movies.json */; };
@@ -26,7 +27,6 @@
 		D1D90D752918643400FE5ECC /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D90D732918643400FE5ECC /* CollectionViewCell.xib */; };
 		D1D90D772918650600FE5ECC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D762918650600FE5ECC /* TableViewController.swift */; };
 		D1D90D792918654D00FE5ECC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D782918654D00FE5ECC /* Constants.swift */; };
-		D1D90D7B291865F000FE5ECC /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D7A291865F000FE5ECC /* Movie.swift */; };
 		D1D90D7D2918663600FE5ECC /* CastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D7C2918663600FE5ECC /* CastModel.swift */; };
 		D1D90D7F2918664700FE5ECC /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D7E2918664700FE5ECC /* MovieModel.swift */; };
 		D1D90D812918667000FE5ECC /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D802918667000FE5ECC /* MovieManager.swift */; };
@@ -51,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D13E45FB291AB2D700CDA161 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		D17699682918720A00A0327A /* Cairo-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		D176996F291883C400A0327A /* WhatMovieToWatchZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatMovieToWatchZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1769971291883C400A0327A /* WhatMovieToWatchZTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatMovieToWatchZTests.swift; sourceTree = "<group>"; };
@@ -71,13 +72,12 @@
 		D1D90D732918643400FE5ECC /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		D1D90D762918650600FE5ECC /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D1D90D782918654D00FE5ECC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		D1D90D7A291865F000FE5ECC /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D1D90D7C2918663600FE5ECC /* CastModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastModel.swift; sourceTree = "<group>"; };
 		D1D90D7E2918664700FE5ECC /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		D1D90D802918667000FE5ECC /* MovieManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
 		D1D90D82291866B900FE5ECC /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D1D90D852918670400FE5ECC /* InfoMovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoMovieModel.swift; sourceTree = "<group>"; };
-		D1D90D862918670400FE5ECC /* MovieData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
+		D1D90D862918670400FE5ECC /* MovieData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieData.swift; path = Info/MovieData.swift; sourceTree = "<group>"; };
 		D1D90D872918670400FE5ECC /* InfoMovieData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoMovieData.swift; sourceTree = "<group>"; };
 		D1D90D882918670400FE5ECC /* InfoMovieManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoMovieManager.swift; sourceTree = "<group>"; };
 		D1D90D8E2918677200FE5ECC /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +112,7 @@
 				D1769978291883E600A0327A /* movies.json */,
 				D176997A291883EA00A0327A /* FakeResponseData.swift */,
 				D176997C291883ED00A0327A /* URLSessionFake.swift */,
+				D13E45FB291AB2D700CDA161 /* Tests.swift */,
 			);
 			path = WhatMovieToWatchZTests;
 			sourceTree = "<group>";
@@ -162,8 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				D1D90D842918670400FE5ECC /* Info */,
-				D1D90D7A291865F000FE5ECC /* Movie.swift */,
 				D1D90D7C2918663600FE5ECC /* CastModel.swift */,
+				D1D90D862918670400FE5ECC /* MovieData.swift */,
 				D1D90D802918667000FE5ECC /* MovieManager.swift */,
 				D1D90D7E2918664700FE5ECC /* MovieModel.swift */,
 			);
@@ -213,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				D1D90D852918670400FE5ECC /* InfoMovieModel.swift */,
-				D1D90D862918670400FE5ECC /* MovieData.swift */,
 				D1D90D872918670400FE5ECC /* InfoMovieData.swift */,
 				D1D90D882918670400FE5ECC /* InfoMovieManager.swift */,
 			);
@@ -346,6 +346,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		D1AEC7B02918DBB400A161EB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -369,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1769972291883C400A0327A /* WhatMovieToWatchZTests.swift in Sources */,
+				D13E45FC291AB2D700CDA161 /* Tests.swift in Sources */,
 				D176997D291883ED00A0327A /* URLSessionFake.swift in Sources */,
 				D176997B291883EA00A0327A /* FakeResponseData.swift in Sources */,
 			);
@@ -381,7 +383,6 @@
 				D1D90D7F2918664700FE5ECC /* MovieModel.swift in Sources */,
 				D1D90D83291866B900FE5ECC /* SearchViewController.swift in Sources */,
 				D1D90D8B2918670400FE5ECC /* InfoMovieData.swift in Sources */,
-				D1D90D7B291865F000FE5ECC /* Movie.swift in Sources */,
 				D1D90D812918667000FE5ECC /* MovieManager.swift in Sources */,
 				D1D90D742918643400FE5ECC /* CollectionViewCell.swift in Sources */,
 				D184887829185EBD00ADDF96 /* AppDelegate.swift in Sources */,
@@ -599,6 +600,7 @@
 				DEVELOPMENT_TEAM = 69N585LAQZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WhatMovieToWatchZ/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -611,9 +613,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sofyan-dev.WhatMovieToWatchZ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -628,6 +633,7 @@
 				DEVELOPMENT_TEAM = 69N585LAQZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WhatMovieToWatchZ/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -640,9 +646,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sofyan-dev.WhatMovieToWatchZ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

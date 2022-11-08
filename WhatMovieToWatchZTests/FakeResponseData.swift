@@ -25,11 +25,11 @@ class FakeResponseData {
         let url = bundle.url(forResource: "movies", withExtension: "json")!
         return try? Data(contentsOf: url)
     }
-
+    
     /// Fausse mauvaise donnée
     static let movieIncorrectData = "erreur".data(using: .utf8)!
-
+    
     // MARK: - Error
-    class TestError: Error {}
-    static let error = TestError()
+    class testError: Error {}
+    static let error = testError()
 }

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// Délégué qui prend en argument l'InfoMovieManager et l'InfoMovieModel
-protocol InfoMovieManagerDelegate {
+protocol InfoMovieManagerDelegate: AnyObject {
     func didUpdateMovie(_ movieManager: InfoMovieManager, movie: InfoMovieModel)
     func didFailWithError(error: Error)
 }
@@ -57,19 +57,19 @@ struct InfoMovieManager {
 
             var backDropImage: UIImage?
             let decodedData = try decoder.decode(InfoMovieData.self, from: movieData)
-            if let backDropPath = decodedData.backdropPath {
+            if let backDropPath = decodedData.backdrop_path {
                 backDropImage = self.urlToImage(urlPath: "https://image.tmdb.org/t/p/w780\(backDropPath)")
             }
             let overView = decodedData.overview
             let title = decodedData.title
-            let releaseDate = decodedData.releaseDate
-            let voteAverage = decodedData.voteAverage
+            let releaseDate = decodedData.release_date
+            let voteAverage = decodedData.vote_average
             let tagLine = decodedData.tagline
             let castString = decodedData.credits.cast
             var castArray: [CastModel] = []
 
             for cast in castString {
-                if let image = cast.profilePath {
+                if let image = cast.profile_path {
                     let imageURL = "https://image.tmdb.org/t/p/w185\(image)"
                     if let image = self.urlToImage(urlPath: imageURL) {
                         castArray.append(CastModel(castImage: image, castName: cast.name))

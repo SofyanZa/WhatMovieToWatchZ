@@ -9,11 +9,11 @@ import Foundation
 
 struct InfoMovieData: Decodable {
     /// chemin de la toile de fond
-    let backdropPath: String?
+    let backdrop_path: String? // swiftlint:disable:this identifier_name
     let overview: String?
     let title: String
-    let releaseDate: String
-    let voteAverage: Double
+    let release_date: String // swiftlint:disable:this identifier_name
+    let vote_average: Double // swiftlint:disable:this identifier_name
     let tagline: String?
     let credits: Credits
     let videos: Videos
@@ -24,7 +24,7 @@ struct Credits: Decodable {
 }
 
 struct Cast: Decodable {
-    let profilePath: String?
+    let profile_path: String? // swiftlint:disable:this identifier_name
     let name: String
 }
 
