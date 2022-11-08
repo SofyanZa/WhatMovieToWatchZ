@@ -105,7 +105,6 @@ extension InfoViewController: InfoMovieManagerDelegate {
     func didFailWithError(error: Error) {
         print(error)
     }
-
 }
 
 // MARK: - UICollectionViewDataSource, UICollectionViewDelegate

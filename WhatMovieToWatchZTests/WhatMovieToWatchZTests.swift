@@ -11,15 +11,6 @@ import FirebaseCore
 
 final class MovieManagerTest: XCTestCase {
     
-    override func setUp() {
-        let appOptions = FirebaseOptions(
-            googleAppID: "1:323818250208:ios:4c65e1f62969fecb9e9585",
-            gcmSenderID: "323818250208"
-        )
-        appOptions.apiKey = "AIzaSyAVe5QwTOE-w1CO60kHpH2tpGh25MSuxpA"
-        appOptions.projectID = "whatmovietowatchz"
-        FirebaseApp.configure(options: appOptions)
-    }
     
     // test if callback returns an error
     func testMovieManagerShouldPostFailedCallbackIfError() {
