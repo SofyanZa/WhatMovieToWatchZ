@@ -41,8 +41,21 @@ class InfoViewController: UIViewController {
     private var trailerID = ""
 
     override func viewDidLoad() {
+        
 
         super.viewDidLoad()
+        
+        /// custom view
+        backDropImageView.layer.borderWidth = 1.0
+        traillerOutlet.layer.borderWidth = 1.0
+        traillerOutlet.layer.borderColor = UIColor.black.cgColor
+        traillerOutlet.layer.cornerRadius = 2
+
+
+        backDropImageView.layer.borderColor = UIColor.lightGray.cgColor
+        overViewLabel.layer.borderWidth = 2.0
+        overViewLabel.layer.cornerRadius = 4
+        overViewLabel.layer.borderColor = UIColor.lightGray.cgColor
         /// La stackView est cachée au lancement de l'app pour optimiser les performances
         stackView.isHidden = true
 
@@ -56,6 +69,8 @@ class InfoViewController: UIViewController {
         } else {
             stackView.axis = .vertical
         }
+        
+        
 
         /// Si l'id est vérifié
         if let id = self.id {

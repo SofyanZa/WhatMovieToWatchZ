@@ -53,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D139A40E291B18F500FF90AC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D17699682918720A00A0327A /* Cairo-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		D176996F291883C400A0327A /* WhatMovieToWatchZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatMovieToWatchZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1769971291883C400A0327A /* MovieManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManagerTests.swift; sourceTree = "<group>"; };
@@ -109,6 +110,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D139A40F291B195900FF90AC /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		D1769970291883C400A0327A /* WhatMovieToWatchZTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +151,7 @@
 		D184887629185EBD00ADDF96 /* WhatMovieToWatchZ */ = {
 			isa = PBXGroup;
 			children = (
+				D139A40F291B195900FF90AC /* Screenshots */,
 				D176997E2918872800A0327A /* GoogleService-Info.plist */,
 				D184887729185EBD00ADDF96 /* AppDelegate.swift */,
 				D184887929185EBD00ADDF96 /* SceneDelegate.swift */,
@@ -152,6 +161,7 @@
 				D1D90D692918630600FE5ECC /* Models */,
 				D1D90D6A2918631000FE5ECC /* Views */,
 				D1D90D6B2918632100FE5ECC /* Controllers */,
+				D139A40E291B18F500FF90AC /* README.md */,
 			);
 			path = WhatMovieToWatchZ;
 			sourceTree = "<group>";
