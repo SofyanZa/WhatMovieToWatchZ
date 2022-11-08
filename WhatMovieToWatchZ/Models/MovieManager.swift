@@ -1,16 +1,15 @@
 //
 //  MovieManager.swift
-//  Info Movie
+//  WhatMovieToWatchZ
 //
-//  Created by Sofyan Zarouri  on 23/08/2022.
+//  Created by Sofyan Zarouri on 23/08/2022 
+//  Copyright © 2022 Sofyan Zarouri. All rights reserved.
 //
 
 import Foundation
-
 import UIKit
 
 /// Délégué de MovieManager qui prend en parametre MovieManager , le MovieModel et le protocol Error
-
 enum ErrorCases: Error {
     case invalidRequest
     case errorDecode

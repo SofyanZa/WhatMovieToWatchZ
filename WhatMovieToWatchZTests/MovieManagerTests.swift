@@ -1,8 +1,9 @@
 //
-//  WhatMovieToWatchZTests.swift
-//  WhatMovieToWatchZTests
+//  MovieManagerTests.swift
+//  WhatMovieToWatchZ
 //
-//  Created by SofyanZ on 07/11/2022.
+//  Created by Sofyan Zarouri on 23/08/2022 
+//  Copyright © 2022 Sofyan Zarouri. All rights reserved.
 //
 
 import XCTest

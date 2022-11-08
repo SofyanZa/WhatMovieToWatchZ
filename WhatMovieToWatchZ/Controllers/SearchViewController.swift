@@ -1,13 +1,14 @@
 //
-//  TableViewController.swift
-//  Info Movie
+//  SearchViewController.swift
+//  WhatMovieToWatchZ
 //
-//  Created by Sofyan Zarouri  on 23/08/2022.
+//  Created by Sofyan Zarouri on 23/08/2022 
+//  Copyright © 2022 Sofyan Zarouri. All rights reserved.
 //
+
 import UIKit
 
-/// Controller de la classe de recherche qui hérite de UITableViewController
-    
+    /// Controller de la classe de recherche qui hérite de UITableViewController
     class SearchViewController: UITableViewController {
     
     /// Variable qui est une instance de la struct MovieManager
@@ -40,8 +41,6 @@ import UIKit
         tableView.reloadData()
     }
     
-    
-    
     // MARK: - Table view data source
     
         /// TableView configuration pour le nombre de lignes affichées
@@ -49,10 +48,10 @@ import UIKit
         //        if you need to upload all the images in the future
         //        let numberOfLines = Double(movieModel.count)/3
         //        return Int(ceil(numberOfLines))
-        
+
         /// Nombre de ligne
         var numberRows: Int
-        
+
         /// Si landscape est vérifié ( false de base , donc on rentre dans la condition )
         if isLandscape {
             /// On initialise le nombre de données affichées à 6
@@ -67,7 +66,7 @@ import UIKit
         /// Fonction de table view pour la taille des cellules reçues quand on tape une recherche
         override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
            var rowHight: CGFloat
-            
+
             /// Si le mode paysage est vérifié
             if isLandscape {
                 /// On choisi la taille de la cellule, 0.25
@@ -83,7 +82,7 @@ import UIKit
 
         /// Sur la tableView on utilise dequeueReusableCell pour recuperer la cellule
         let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.identifier, for: indexPath) as! MainTableViewCell
-        
+
         /// Une creation de reconaissance de geste grâce à UITapGestureRecognizer qui prend en parametre la taget et l'action ( sur l'une des images )
         let tapGestureRecognizer1 = UITapGestureRecognizer(target: self, action: #selector(viewImage(_:)))
         cell.image1.addGestureRecognizer(tapGestureRecognizer1)
@@ -105,7 +104,7 @@ import UIKit
 
         return cell
     }
-    
+
         /// Function ViewImage qui hérit
     @objc func viewImage(_ sender: AnyObject) {
         /// la fonction "tag" est Un entier que vous pouvez utiliser pour identifier les objets de vue dans votre application.
@@ -115,7 +114,7 @@ import UIKit
         /// On spécifie dans cette fonction  que l'identifiant du segue est SearchToInfo
         performSegue(withIdentifier: "SearchToInfo", sender: self)
     }
-    
+
         /// On utilise la fonction prepare  pour partager les données d'un controller à un autre
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         /// Si l'identifiant du segue est vérifié
@@ -149,7 +148,7 @@ import UIKit
     }
        
     //MARK: - LoadMore
-    
+
     /// La prochaine page, de base à 1
     private var nextPage = 1
     /// La premiere page, de base à 1 aussi
@@ -157,7 +156,7 @@ import UIKit
     
     /// Fonction pour charger d'avantage de pages
     func loadMore() {
-        
+
         /// Si  d on arrive au dernier elément de la collection ( les dernieres image du bas ) et que le total de page est arrivé à a la fin de sa collection
         if let modelPage = movieModel.last?.currentPage, let totalPages = movieModel.last?.totalPages {
             /// On dit que la page actuelle c'est le modemlPage
@@ -198,7 +197,7 @@ extension SearchViewController {
     func didUpdateMovie(_ movieManager: MovieManager, movie: [MovieModel]) {
         /// Dans la queue principale on gère l'asynchrone ici
         DispatchQueue.main.async {
-            
+
             /// Pour chaque fiilm
             for n in movie {
                 /// On applique un film à un model de film
@@ -209,10 +208,10 @@ extension SearchViewController {
             self.tableView.reloadData()
         }
     }
-    
+
     /// Fonction d'alerte asynchrone d'erreur
     func didFailWithError(error: Error) {
-        
+
         DispatchQueue.main.async {
             
             let alert = UIAlertController(title: "Error", message: nil, preferredStyle: .alert)

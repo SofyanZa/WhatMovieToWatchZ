@@ -1,22 +1,23 @@
 //
-//  MovieData.swift
-//  Info Movie
+//  InfoMovieData.swift
+//  WhatMovieToWatchZ
 //
-//  Created by Sofyan Zarouri  on 23/08/2022.
+//  Created by Sofyan Zarouri on 23/08/2022 
+//  Copyright © 2022 Sofyan Zarouri. All rights reserved.
 //
 
 import Foundation
 
 struct InfoMovieData: Decodable {
     /// chemin de la toile de fond
-    let backdrop_path: String? // swiftlint:disable:this identifier_name
+    let backdrop_path: String?
     let overview: String?
     let title: String
-    let release_date: String // swiftlint:disable:this identifier_name
-    let vote_average: Double // swiftlint:disable:this identifier_name
-    let tagline: String?
+    let release_date: String
+    let vote_average: Double
     let credits: Credits
     let videos: Videos
+    let tagline: String?
 }
 
 struct Credits: Decodable {
@@ -24,7 +25,7 @@ struct Credits: Decodable {
 }
 
 struct Cast: Decodable {
-    let profile_path: String? // swiftlint:disable:this identifier_name
+    let profile_path: String? 
     let name: String
 }
 

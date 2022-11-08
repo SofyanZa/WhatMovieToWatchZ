@@ -1,8 +1,9 @@
 //
 //  MovieData.swift
-//  Info Movie
+//  WhatMovieToWatchZ
 //
-//  Created by Sofyan Zarouri  on 23/08/2022.
+//  Created by Sofyan Zarouri on 23/08/2022 
+//  Copyright © 2022 Sofyan Zarouri. All rights reserved.
 //
 
 import Foundation
@@ -11,10 +12,10 @@ import Metal
 struct MovieData: Decodable {
     let results: [Results]
     let page: Int
-    let total_pages: Int // swiftlint:disable:this identifier_name
+    let total_pages: Int
 }
 
 struct Results: Decodable {
-    let poster_path: String? // swiftlint:disable:this identifier_name
+    let poster_path: String? 
     let id: Int
 }

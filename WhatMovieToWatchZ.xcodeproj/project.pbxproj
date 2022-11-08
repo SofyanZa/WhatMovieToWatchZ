@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D13E4601291AC6FB00CDA161 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = D13E4600291AC6FB00CDA161 /* FirebasePerformance */; };
 		D17699692918720A00A0327A /* Cairo-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D17699682918720A00A0327A /* Cairo-VariableFont_wght.ttf */; };
-		D1769972291883C400A0327A /* WhatMovieToWatchZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1769971291883C400A0327A /* WhatMovieToWatchZTests.swift */; };
+		D1769972291883C400A0327A /* MovieManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1769971291883C400A0327A /* MovieManagerTests.swift */; };
 		D1769979291883E600A0327A /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = D1769978291883E600A0327A /* movies.json */; };
 		D176997B291883EA00A0327A /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D176997A291883EA00A0327A /* FakeResponseData.swift */; };
 		D176997D291883ED00A0327A /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = D176997C291883ED00A0327A /* URLSessionFake.swift */; };
@@ -53,7 +53,7 @@
 /* Begin PBXFileReference section */
 		D17699682918720A00A0327A /* Cairo-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		D176996F291883C400A0327A /* WhatMovieToWatchZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatMovieToWatchZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1769971291883C400A0327A /* WhatMovieToWatchZTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatMovieToWatchZTests.swift; sourceTree = "<group>"; };
+		D1769971291883C400A0327A /* MovieManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManagerTests.swift; sourceTree = "<group>"; };
 		D1769978291883E600A0327A /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
 		D176997A291883EA00A0327A /* FakeResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
 		D176997C291883ED00A0327A /* URLSessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		D1769970291883C400A0327A /* WhatMovieToWatchZTests */ = {
 			isa = PBXGroup;
 			children = (
-				D1769971291883C400A0327A /* WhatMovieToWatchZTests.swift */,
+				D1769971291883C400A0327A /* MovieManagerTests.swift */,
 				D1769978291883E600A0327A /* movies.json */,
 				D1CCCDE6291AD6DA008D9394 /* GoogleService-Info.plist */,
 				D176997A291883EA00A0327A /* FakeResponseData.swift */,
@@ -370,7 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1769972291883C400A0327A /* WhatMovieToWatchZTests.swift in Sources */,
+				D1769972291883C400A0327A /* MovieManagerTests.swift in Sources */,
 				D176997D291883ED00A0327A /* URLSessionFake.swift in Sources */,
 				D176997B291883EA00A0327A /* FakeResponseData.swift in Sources */,
 			);

@@ -1,8 +1,9 @@
 //
 //  InfoViewController.swift
-//  Info Movie
+//  WhatMovieToWatchZ
 //
-//  Created by Sofyan Zarouri  on 23/08/2022.
+//  Created by Sofyan Zarouri on 23/08/2022 
+//  Copyright © 2022 Sofyan Zarouri. All rights reserved.
 //
 
 import UIKit
@@ -115,10 +116,8 @@ extension InfoViewController: UICollectionViewDataSource, UICollectionViewDelega
 
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // swiftlint:disable force_cast
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier,
                                                    for: indexPath) as! CollectionViewCell
-        // swiftlint:enable force_cast
         cell.configure(with: castImages[indexPath.row])
         return cell
     }
