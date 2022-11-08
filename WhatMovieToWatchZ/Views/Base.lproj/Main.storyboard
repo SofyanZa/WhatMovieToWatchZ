@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -159,12 +160,25 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwI-if-4q7" userLabel="Trailler Outlet">
+                                                        <rect key="frame" x="321" y="165" width="49.666666666666686" height="34.333333333333343"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" image="play.circle" catalog="system">
+                                                            <color key="baseForegroundColor" name="Primary dark colour"/>
+                                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="Z97-a6-ECU" kind="show" identifier="InfoToVideo" id="Rby-s0-8Nc"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.088286902522138624" green="0.088113681411483069" blue="0.12885262573333323" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstItem="sVK-hg-DHy" firstAttribute="leading" secondItem="aMt-jC-Mb9" secondAttribute="leading" id="RBt-Et-bwZ"/>
                                                     <constraint firstItem="sVK-hg-DHy" firstAttribute="top" secondItem="aMt-jC-Mb9" secondAttribute="top" id="nnT-xM-uGb"/>
                                                     <constraint firstItem="sVK-hg-DHy" firstAttribute="centerX" secondItem="aMt-jC-Mb9" secondAttribute="centerX" id="s5z-Ca-HK9"/>
+                                                    <constraint firstItem="wwI-if-4q7" firstAttribute="top" secondItem="aMt-jC-Mb9" secondAttribute="top" constant="165" id="swq-s8-fk0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wwI-if-4q7" secondAttribute="trailing" constant="22.329999999999998" id="tKo-GW-YPG"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -173,13 +187,13 @@
                                         <rect key="frame" x="0.0" y="334.66666666666674" width="393" height="331.33333333333326"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Résumé" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ef0-H2-5dR">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="23"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="18"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wx6-l4-Q3j">
-                                                <rect key="frame" x="0.0" y="38" width="393" height="293.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="33" width="393" height="298.33333333333331"/>
                                                 <color key="backgroundColor" name="Primary dark colour"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="4dd-YY-7eI"/>
@@ -218,6 +232,7 @@
                         <outlet property="overViewLabel" destination="Ef0-H2-5dR" id="T8u-5t-fn3"/>
                         <outlet property="ratingLabel" destination="0l1-S7-IoH" id="eRN-GY-jkb"/>
                         <outlet property="stackView" destination="HDa-Ju-nuB" id="qpL-uG-dLa"/>
+                        <outlet property="traillerOutlet" destination="wwI-if-4q7" id="BQd-Bv-6W1"/>
                         <outlet property="yearLabel" destination="VP4-kp-N8W" id="vwE-VV-dWX"/>
                     </connections>
                 </viewController>
@@ -252,12 +267,44 @@
             </objects>
             <point key="canvasLocation" x="4465.217391304348" y="122.54464285714285"/>
         </scene>
+        <!--Video View Controller-->
+        <scene sceneID="Jp2-IN-mnc">
+            <objects>
+                <viewController id="Z97-a6-ECU" customClass="VideoViewController" customModule="InfoMovie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ylF-va-GUw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80D-BK-p3F" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Aqq-Vq-yBo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="80D-BK-p3F" secondAttribute="trailing" id="0kM-Cn-Zop"/>
+                            <constraint firstItem="80D-BK-p3F" firstAttribute="leading" secondItem="ylF-va-GUw" secondAttribute="leading" id="1Dp-lt-XhY"/>
+                            <constraint firstAttribute="bottom" secondItem="80D-BK-p3F" secondAttribute="bottom" id="Zea-lk-Kza"/>
+                            <constraint firstItem="80D-BK-p3F" firstAttribute="top" secondItem="ylF-va-GUw" secondAttribute="top" id="s2t-X5-CuY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="plv-JC-N1L"/>
+                    <connections>
+                        <outlet property="playerView" destination="80D-BK-p3F" id="W8e-4T-YOM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPv-JJ-sPz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7415" y="122"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="a2s-Qi-f33"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
+        <image name="play.circle" catalog="system" width="128" height="123"/>
         <namedColor name="Primary colour">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -267,5 +314,11 @@
         <namedColor name="Text Color">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

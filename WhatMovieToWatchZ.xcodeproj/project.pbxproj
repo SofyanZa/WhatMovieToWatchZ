@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D12C27AC291AFFE800D47CB2 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = D12C27AB291AFFE800D47CB2 /* YouTubeiOSPlayerHelper */; };
 		D13E4601291AC6FB00CDA161 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = D13E4600291AC6FB00CDA161 /* FirebasePerformance */; };
 		D17699692918720A00A0327A /* Cairo-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D17699682918720A00A0327A /* Cairo-VariableFont_wght.ttf */; };
 		D1769972291883C400A0327A /* MovieManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1769971291883C400A0327A /* MovieManagerTests.swift */; };
@@ -21,6 +22,7 @@
 		D184888429185EBE00ADDF96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D184888229185EBE00ADDF96 /* LaunchScreen.storyboard */; };
 		D1CCCDE7291AD6DA008D9394 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1CCCDE6291AD6DA008D9394 /* GoogleService-Info.plist */; };
 		D1CCCE3A291AEFED008D9394 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = D13E45FE291AC65A00CDA161 /* FirebasePerformance */; };
+		D1CCCE3C291AFC35008D9394 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CCCE3B291AFC35008D9394 /* VideoViewController.swift */; };
 		D1D90D6F2918642E00FE5ECC /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D90D6D2918642E00FE5ECC /* MainTableViewCell.xib */; };
 		D1D90D702918642E00FE5ECC /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D6E2918642E00FE5ECC /* MainTableViewCell.swift */; };
 		D1D90D742918643400FE5ECC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90D722918643400FE5ECC /* CollectionViewCell.swift */; };
@@ -66,6 +68,7 @@
 		D184888329185EBE00ADDF96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D184888529185EBE00ADDF96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1CCCDE6291AD6DA008D9394 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D1CCCE3B291AFC35008D9394 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		D1D90D6D2918642E00FE5ECC /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		D1D90D6E2918642E00FE5ECC /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		D1D90D722918643400FE5ECC /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D13E4601291AC6FB00CDA161 /* FirebasePerformance in Frameworks */,
+				D12C27AC291AFFE800D47CB2 /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +192,7 @@
 				D1D90D82291866B900FE5ECC /* SearchViewController.swift */,
 				D1D90D762918650600FE5ECC /* TableViewController.swift */,
 				D1D90D8E2918677200FE5ECC /* InfoViewController.swift */,
+				D1CCCE3B291AFC35008D9394 /* VideoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 			name = WhatMovieToWatchZ;
 			packageProductDependencies = (
 				D13E4600291AC6FB00CDA161 /* FirebasePerformance */,
+				D12C27AB291AFFE800D47CB2 /* YouTubeiOSPlayerHelper */,
 			);
 			productName = WhatMovieToWatchZ;
 			productReference = D184887429185EBD00ADDF96 /* WhatMovieToWatchZ.app */;
@@ -306,6 +312,7 @@
 			mainGroup = D184886B29185EBD00ADDF96;
 			packageReferences = (
 				D13E45FD291AC65A00CDA161 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D12C27AA291AFFE800D47CB2 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
 			);
 			productRefGroup = D184887529185EBD00ADDF96 /* Products */;
 			projectDirPath = "";
@@ -388,6 +395,7 @@
 				D184887829185EBD00ADDF96 /* AppDelegate.swift in Sources */,
 				D1D90D8A2918670400FE5ECC /* MovieData.swift in Sources */,
 				D1D90D702918642E00FE5ECC /* MainTableViewCell.swift in Sources */,
+				D1CCCE3C291AFC35008D9394 /* VideoViewController.swift in Sources */,
 				D1D90D8C2918670400FE5ECC /* InfoMovieManager.swift in Sources */,
 				D1D90D772918650600FE5ECC /* TableViewController.swift in Sources */,
 				D1D90D892918670400FE5ECC /* InfoMovieModel.swift in Sources */,
@@ -688,6 +696,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D12C27AA291AFFE800D47CB2 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 2.0.0;
+				minimumVersion = 1.0.0;
+			};
+		};
 		D13E45FD291AC65A00CDA161 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -700,6 +717,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D12C27AB291AFFE800D47CB2 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D12C27AA291AFFE800D47CB2 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
 		D13E45FE291AC65A00CDA161 /* FirebasePerformance */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D13E45FD291AC65A00CDA161 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

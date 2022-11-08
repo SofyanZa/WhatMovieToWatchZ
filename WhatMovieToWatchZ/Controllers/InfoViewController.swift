@@ -10,7 +10,8 @@ import UIKit
 
 /// Le viewcontroller d' information d'un film
 class InfoViewController: UIViewController {
-
+    
+    @IBOutlet weak var traillerOutlet: UIButton!
     /// Le résumé du film
     @IBOutlet weak var overViewLabel: UILabel!
     /// L'image du film
@@ -76,6 +77,17 @@ class InfoViewController: UIViewController {
             stackView.axis = .vertical
         }
     }
+    
+    @IBAction func videoButton(_ sender: Any) {
+        performSegue(withIdentifier: "InfoToVideo", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "InfoToVideo" {
+            let destinationVC = segue.destination as! VideoViewController
+            destinationVC.videoID = trailerID
+        }
+    }
 }
 
 // MARK: - InfoMovieManagerDelegate
@@ -96,6 +108,13 @@ extension InfoViewController: InfoMovieManagerDelegate {
             /// On applique les donnée reçues du synopsys  et on l'affecte à overViewLabel
             self.overViewLabel.text = movie.overView
             self.castImages = movie.castInfo
+            // first index with video contain trailler is official and site youtube
+            let index = movie.videos.firstIndex(where: { $0.type.lowercased().contains("trailer") && $0.official == true && $0.site.lowercased().contains("youtube") })
+            if index == nil {
+                self.traillerOutlet.isHidden = true
+            } else {
+                self.trailerID = "\(movie.videos[index!].key)"
+            }
             self.yearLabel.text = String(movie.releaseDate.prefix(4))
             self.ratingLabel.text = String(format: "%.2f", movie.voteAverage)
             self.castColletionView.reloadData()
