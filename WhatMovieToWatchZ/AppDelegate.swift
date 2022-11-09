@@ -10,6 +10,7 @@ import UIKit
 import FirebaseCore
 
 /// App delegate
+/// Test firebase
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
