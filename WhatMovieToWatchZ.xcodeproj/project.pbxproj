@@ -132,6 +132,7 @@
 		D184886B29185EBD00ADDF96 = {
 			isa = PBXGroup;
 			children = (
+				D139A40E291B18F500FF90AC /* README.md */,
 				D184887629185EBD00ADDF96 /* WhatMovieToWatchZ */,
 				D1769970291883C400A0327A /* WhatMovieToWatchZTests */,
 				D184887529185EBD00ADDF96 /* Products */,
@@ -161,7 +162,6 @@
 				D1D90D692918630600FE5ECC /* Models */,
 				D1D90D6A2918631000FE5ECC /* Views */,
 				D1D90D6B2918632100FE5ECC /* Controllers */,
-				D139A40E291B18F500FF90AC /* README.md */,
 			);
 			path = WhatMovieToWatchZ;
 			sourceTree = "<group>";
