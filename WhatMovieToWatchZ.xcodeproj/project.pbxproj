@@ -18,6 +18,12 @@
 		D17E2C98291BFF8100932BDE /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = D17E2C97291BFF8100932BDE /* YouTubeiOSPlayerHelper */; };
 		D17E2C9A291C093E00932BDE /* bitrise.yml in Resources */ = {isa = PBXBuildFile; fileRef = D17E2C99291C093E00932BDE /* bitrise.yml */; };
 		D17E2C9C291C094800932BDE /* bitrise.yml in Resources */ = {isa = PBXBuildFile; fileRef = D17E2C9B291C094800932BDE /* bitrise.yml */; };
+		D17E2C9F291C36C200932BDE /* ScreenBase.png in Resources */ = {isa = PBXBuildFile; fileRef = D17E2C9D291C36C200932BDE /* ScreenBase.png */; };
+		D17E2CA0291C36C200932BDE /* ScreenHome.png in Resources */ = {isa = PBXBuildFile; fileRef = D17E2C9E291C36C200932BDE /* ScreenHome.png */; };
+		D17E2CA3291C36CC00932BDE /* Screen3.png in Resources */ = {isa = PBXBuildFile; fileRef = D17E2CA1291C36CC00932BDE /* Screen3.png */; };
+		D17E2CA4291C36CC00932BDE /* Screen4.png in Resources */ = {isa = PBXBuildFile; fileRef = D17E2CA2291C36CC00932BDE /* Screen4.png */; };
+		D17E2CA7291C36D600932BDE /* Screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = D17E2CA5291C36D600932BDE /* Screen2.png */; };
+		D17E2CA8291C36D600932BDE /* Screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = D17E2CA6291C36D600932BDE /* Screen1.png */; };
 		D184887829185EBD00ADDF96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184887729185EBD00ADDF96 /* AppDelegate.swift */; };
 		D184887A29185EBD00ADDF96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184887929185EBD00ADDF96 /* SceneDelegate.swift */; };
 		D184887F29185EBD00ADDF96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D184887D29185EBD00ADDF96 /* Main.storyboard */; };
@@ -66,6 +72,12 @@
 		D176997E2918872800A0327A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D17E2C99291C093E00932BDE /* bitrise.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = bitrise.yml; sourceTree = "<group>"; };
 		D17E2C9B291C094800932BDE /* bitrise.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = bitrise.yml; sourceTree = "<group>"; };
+		D17E2C9D291C36C200932BDE /* ScreenBase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenBase.png; sourceTree = "<group>"; };
+		D17E2C9E291C36C200932BDE /* ScreenHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenHome.png; sourceTree = "<group>"; };
+		D17E2CA1291C36CC00932BDE /* Screen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen3.png; sourceTree = "<group>"; };
+		D17E2CA2291C36CC00932BDE /* Screen4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen4.png; sourceTree = "<group>"; };
+		D17E2CA5291C36D600932BDE /* Screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen2.png; sourceTree = "<group>"; };
+		D17E2CA6291C36D600932BDE /* Screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen1.png; sourceTree = "<group>"; };
 		D184887429185EBD00ADDF96 /* WhatMovieToWatchZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatMovieToWatchZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D184887729185EBD00ADDF96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D184887929185EBD00ADDF96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +131,12 @@
 		D139A40F291B195900FF90AC /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
+				D17E2CA6291C36D600932BDE /* Screen1.png */,
+				D17E2CA5291C36D600932BDE /* Screen2.png */,
+				D17E2C9D291C36C200932BDE /* ScreenBase.png */,
+				D17E2C9E291C36C200932BDE /* ScreenHome.png */,
+				D17E2CA1291C36CC00932BDE /* Screen3.png */,
+				D17E2CA2291C36CC00932BDE /* Screen4.png */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -358,11 +376,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D176997F2918872800A0327A /* GoogleService-Info.plist in Resources */,
+				D17E2CA3291C36CC00932BDE /* Screen3.png in Resources */,
 				D184888429185EBE00ADDF96 /* LaunchScreen.storyboard in Resources */,
 				D184888129185EBE00ADDF96 /* Assets.xcassets in Resources */,
+				D17E2CA8291C36D600932BDE /* Screen1.png in Resources */,
 				D17699692918720A00A0327A /* Cairo-VariableFont_wght.ttf in Resources */,
+				D17E2CA4291C36CC00932BDE /* Screen4.png in Resources */,
+				D17E2C9F291C36C200932BDE /* ScreenBase.png in Resources */,
 				D1D90D6F2918642E00FE5ECC /* MainTableViewCell.xib in Resources */,
+				D17E2CA7291C36D600932BDE /* Screen2.png in Resources */,
 				D184887F29185EBD00ADDF96 /* Main.storyboard in Resources */,
+				D17E2CA0291C36C200932BDE /* ScreenHome.png in Resources */,
 				D1E910B829189158007D2493 /* Assets.xcassets in Resources */,
 				D17E2C9A291C093E00932BDE /* bitrise.yml in Resources */,
 				D1D90D752918643400FE5ECC /* CollectionViewCell.xib in Resources */,
