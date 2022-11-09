@@ -6,9 +6,11 @@
 //  Copyright © 2022 Sofyan Zarouri. All rights reserved.
 //
 
+/// Tests unitaires
 import XCTest
 @testable import WhatMovieToWatchZ
 import FirebaseCore
+import YouTubeiOSPlayerHelper
 
 final class MovieManagerTest: XCTestCase {
     

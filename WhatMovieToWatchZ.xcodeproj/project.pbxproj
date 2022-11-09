@@ -15,6 +15,7 @@
 		D176997B291883EA00A0327A /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D176997A291883EA00A0327A /* FakeResponseData.swift */; };
 		D176997D291883ED00A0327A /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = D176997C291883ED00A0327A /* URLSessionFake.swift */; };
 		D176997F2918872800A0327A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D176997E2918872800A0327A /* GoogleService-Info.plist */; };
+		D17E2C98291BFF8100932BDE /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = D17E2C97291BFF8100932BDE /* YouTubeiOSPlayerHelper */; };
 		D184887829185EBD00ADDF96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184887729185EBD00ADDF96 /* AppDelegate.swift */; };
 		D184887A29185EBD00ADDF96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184887929185EBD00ADDF96 /* SceneDelegate.swift */; };
 		D184887F29185EBD00ADDF96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D184887D29185EBD00ADDF96 /* Main.storyboard */; };
@@ -104,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1CCCE3A291AEFED008D9394 /* FirebasePerformance in Frameworks */,
+				D17E2C98291BFF8100932BDE /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +267,7 @@
 			name = WhatMovieToWatchZTests;
 			packageProductDependencies = (
 				D13E45FE291AC65A00CDA161 /* FirebasePerformance */,
+				D17E2C97291BFF8100932BDE /* YouTubeiOSPlayerHelper */,
 			);
 			productName = WhatMovieToWatchZTests;
 			productReference = D176996F291883C400A0327A /* WhatMovieToWatchZTests.xctest */;
@@ -741,6 +744,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D13E45FD291AC65A00CDA161 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebasePerformance;
+		};
+		D17E2C97291BFF8100932BDE /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D12C27AA291AFFE800D47CB2 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
