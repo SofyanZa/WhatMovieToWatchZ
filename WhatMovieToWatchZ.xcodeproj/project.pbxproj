@@ -16,6 +16,8 @@
 		D176997D291883ED00A0327A /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = D176997C291883ED00A0327A /* URLSessionFake.swift */; };
 		D176997F2918872800A0327A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D176997E2918872800A0327A /* GoogleService-Info.plist */; };
 		D17E2C98291BFF8100932BDE /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = D17E2C97291BFF8100932BDE /* YouTubeiOSPlayerHelper */; };
+		D17E2C9A291C093E00932BDE /* bitrise.yml in Resources */ = {isa = PBXBuildFile; fileRef = D17E2C99291C093E00932BDE /* bitrise.yml */; };
+		D17E2C9C291C094800932BDE /* bitrise.yml in Resources */ = {isa = PBXBuildFile; fileRef = D17E2C9B291C094800932BDE /* bitrise.yml */; };
 		D184887829185EBD00ADDF96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184887729185EBD00ADDF96 /* AppDelegate.swift */; };
 		D184887A29185EBD00ADDF96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184887929185EBD00ADDF96 /* SceneDelegate.swift */; };
 		D184887F29185EBD00ADDF96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D184887D29185EBD00ADDF96 /* Main.storyboard */; };
@@ -62,6 +64,8 @@
 		D176997A291883EA00A0327A /* FakeResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
 		D176997C291883ED00A0327A /* URLSessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
 		D176997E2918872800A0327A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D17E2C99291C093E00932BDE /* bitrise.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = bitrise.yml; sourceTree = "<group>"; };
+		D17E2C9B291C094800932BDE /* bitrise.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = bitrise.yml; sourceTree = "<group>"; };
 		D184887429185EBD00ADDF96 /* WhatMovieToWatchZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatMovieToWatchZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D184887729185EBD00ADDF96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D184887929185EBD00ADDF96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 		D1769970291883C400A0327A /* WhatMovieToWatchZTests */ = {
 			isa = PBXGroup;
 			children = (
+				D17E2C9B291C094800932BDE /* bitrise.yml */,
 				D1769971291883C400A0327A /* MovieManagerTests.swift */,
 				D1769978291883E600A0327A /* movies.json */,
 				D1CCCDE6291AD6DA008D9394 /* GoogleService-Info.plist */,
@@ -156,6 +161,7 @@
 			children = (
 				D139A40F291B195900FF90AC /* Screenshots */,
 				D176997E2918872800A0327A /* GoogleService-Info.plist */,
+				D17E2C99291C093E00932BDE /* bitrise.yml */,
 				D184887729185EBD00ADDF96 /* AppDelegate.swift */,
 				D184887929185EBD00ADDF96 /* SceneDelegate.swift */,
 				D1E910B729189158007D2493 /* Assets.xcassets */,
@@ -342,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1CCCDE7291AD6DA008D9394 /* GoogleService-Info.plist in Resources */,
+				D17E2C9C291C094800932BDE /* bitrise.yml in Resources */,
 				D1769979291883E600A0327A /* movies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +364,7 @@
 				D1D90D6F2918642E00FE5ECC /* MainTableViewCell.xib in Resources */,
 				D184887F29185EBD00ADDF96 /* Main.storyboard in Resources */,
 				D1E910B829189158007D2493 /* Assets.xcassets in Resources */,
+				D17E2C9A291C093E00932BDE /* bitrise.yml in Resources */,
 				D1D90D752918643400FE5ECC /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +452,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sofyan-dev.WhatMovieToWatchZTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,6 +478,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sofyan-dev.WhatMovieToWatchZTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -53,9 +53,7 @@ class InfoViewController: UIViewController {
 
 
         backDropImageView.layer.borderColor = UIColor.lightGray.cgColor
-        overViewLabel.layer.borderWidth = 2.0
-        overViewLabel.layer.cornerRadius = 4
-        overViewLabel.layer.borderColor = UIColor.lightGray.cgColor
+
         /// La stackView est cachée au lancement de l'app pour optimiser les performances
         stackView.isHidden = true
 
